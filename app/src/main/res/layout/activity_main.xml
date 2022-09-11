@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/hw1ex2background">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Hello"
+        android:textColor="#E040FB"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/img_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="223dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/hw1ex2button"
+        android:onClick="onClick"
+        android:text="CLICK ME"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="625dp"
+        android:layout_height="345dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_1"
+        app:srcCompat="@drawable/goodbyeelephant" />
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="305dp"
+        android:layout_height="385dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_1"
+        app:srcCompat="@drawable/helloelephant"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
